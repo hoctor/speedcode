@@ -11,19 +11,23 @@ class _PandemicScreenState extends State<PandemicScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.white,
         body: ListView(
           children: <Widget>[
             Container(
-              height: MediaQuery.of(context).size.height * 0.6,
+              height: MediaQuery.of(context).size.height * 0.4,
               child: ClipRRect(
                 borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(50.0),
                   bottomRight: Radius.circular(50.0),
                 ),
-                child: Image.asset(
-                  "assets/mundo.png",
-                  fit: BoxFit.cover,
+                child: Container(
+                  color: Colors.blue[900],
+                  child: Image.asset(
+                    "assets/mundo2.png",
+                    fit: BoxFit.cover,
+                    color: Colors.lightGreen,
+                  ),
                 ),
               ),
             ),

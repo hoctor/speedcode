@@ -24,7 +24,8 @@ class _HomeScreenState extends State<HomeScreen> {
               height: MediaQuery.of(context).size.height * 0.6,
               child: ClipRRect(
                 borderRadius: BorderRadius.only(
-                  bottomRight: Radius.circular(50.0),
+                  bottomLeft: Radius.elliptical(50, 30),
+                  bottomRight: Radius.elliptical(50, 30),
                 ),
                 child: ShaderMask(
                   shaderCallback: (bounds) => RadialGradient(

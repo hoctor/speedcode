@@ -10,14 +10,21 @@ class _InfoScreenState extends State<InfoScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.green,
       body: SafeArea(
           child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           CircleAvatar(
-            radius: 50.0,
+            radius: 75.0,
             backgroundImage: AssetImage('assets/casos.jpg'),
+          ),
+          SizedBox(
+            height: 30.0,
+            width: 150.0,
+            child: Divider(
+              color: Colors.teal.shade100,
+            ),
           ),
           Text(
             'Heitor Junqueira',
